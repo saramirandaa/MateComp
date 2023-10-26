@@ -26,6 +26,55 @@ class Computer_math2:
     def modular_aritmetic(self):
         #Aritmética Modular
         pass
+    def residual_class(self,num_Z):
+        print("\n\tClases Residuales\n")
+        print(f"m: {num_Z}")
+        divisibilities = []
+        num_Zm = []
+        new = 0
+        for i in range(num_Z):
+            num_Zm.append(i)
+            if (i == num_Z - 1):
+                break
+
+        print("Zm =",num_Zm)
+        iterative_numsZ = set()
+        for i in num_Zm:
+            new = num_Zm[i] * (-1)
+            iterative_numsZ.add(new)
+            iterative_numsZ.add(num_Zm[i])
+
+        #Cambiar el residuo deseado de la lista de Zm
+        for i in num_Zm:
+            wished_residue = i
+            for j in iterative_numsZ:
+                new = num_Z * j + wished_residue
+                divisibilities.append(new)
+            print(f"Zm ( {wished_residue} ) = {divisibilities}")
+            divisibilities.clear()
     def induction_math(self):
         #Inducción Matemática
         pass
+
+
+'''
+    2.1. Introducción a la teoría de números 
+
+    2.2. El algoritmo de la división, máximo común divisor y mínimo común múltiplo 
+
+    2.3. Números primos 
+
+        2.3.1.Divisores 
+
+        2.3.2.Obtención de números primos 
+
+        2.3.3.Factorización prima 
+
+    2.4. Euclides extendido 
+
+    2.5. Aritmética Modular 
+
+    2.6. Inducción Matemática
+
+    2.7 Permutaciones y combinaciones
+'''

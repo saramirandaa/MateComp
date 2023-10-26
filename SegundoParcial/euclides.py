@@ -1,1 +1,0 @@
-#euclides y extendido
