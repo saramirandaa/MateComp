@@ -29,22 +29,23 @@ class Computer_math2:
     def residual_class(self,num_Z):
         print("\n\tClases Residuales\n")
         print(f"m: {num_Z}")
+
         divisibilities = []
         num_Zm = []
         new = 0
+        iterative_numsZ = set()
+
         for i in range(num_Z):
             num_Zm.append(i)
             if (i == num_Z - 1):
                 break
 
         print("Zm =",num_Zm)
-        iterative_numsZ = set()
         for i in num_Zm:
             new = num_Zm[i] * (-1)
             iterative_numsZ.add(new)
             iterative_numsZ.add(num_Zm[i])
 
-        #Cambiar el residuo deseado de la lista de Zm
         for i in num_Zm:
             wished_residue = i
             for j in iterative_numsZ:
@@ -52,6 +53,7 @@ class Computer_math2:
                 divisibilities.append(new)
             print(f"Zm ( {wished_residue} ) = {divisibilities}")
             divisibilities.clear()
+            
     def induction_math(self):
         #Inducción Matemática
         pass
