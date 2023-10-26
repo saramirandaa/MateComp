@@ -1,6 +1,7 @@
-import clase_residual as cr
+from clase_residual import *
+
 def main():
-    cr.residual_class(7)
+    residual_class(7)
     
 if __name__ == '__main__':
     main()
