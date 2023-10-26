@@ -1,4 +1,4 @@
-
+#agregar principio aditivo
 def residual_class(num_Z):
     print("\n\tClases Residuales\n")
     print(f"m: {num_Z}")
