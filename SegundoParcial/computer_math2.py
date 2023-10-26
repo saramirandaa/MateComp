@@ -53,9 +53,13 @@ class Computer_math2:
                 divisibilities.append(new)
             print(f"Zm ( {wished_residue} ) = {divisibilities}")
             divisibilities.clear()
-            
+
     def induction_math(self):
         #Inducción Matemática
+        pass
+
+    def permutations_combinations(self):
+        #Permutaciones y combinaciones
         pass
 
 
